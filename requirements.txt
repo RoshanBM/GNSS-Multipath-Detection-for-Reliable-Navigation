@@ -1,8 +1,32 @@
-# Python dependencies
+# Python dependencies for the GNSS multipath detection pipelines.
+#
+# IMPORTANT: keep numpy below 2.0. `shap` will try to pull NumPy 2.x, which
+# breaks the NumPy-1.x-compiled pandas build this project runs against.
+
+# --- core ---
+numpy<2
 pandas
+scipy
 scikit-learn
+
+# --- notebooks ---
 notebook
+jupyterlab
 ipywidgets
 tqdm
-seaborn
+
+# --- plotting & maps ---
 matplotlib
+seaborn
+folium
+
+# --- modelling ---
+imbalanced-learn        # SMOTE (mi8_multipath)
+optuna                  # hyperparameter search (2023_notebooks deep dive)
+shap                    # interpretability (2023, warwick, analysis)
+
+# --- sequence models (attention_brnn only) ---
+# Install separately with the build matching your CUDA version:
+#   https://pytorch.org/get-started/locally/
+# torch
+# torchinfo

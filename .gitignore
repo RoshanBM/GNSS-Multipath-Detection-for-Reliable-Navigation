@@ -1,3 +1,32 @@
-# Ignore generated/data files
+# --- Data (not redistributed; see README for download instructions) ---
 GNSS_Multipath_Project/data/
+
+# --- Dissertation working material (figure dumps, outline, results tables) ---
 GNSS_Multipath_Project/dissertation/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- Environments ---
+.venv/
+venv/
+env/
+
+# --- Model artefacts ---
+*.pt
+*.pth
+*.npz
+
+# --- Editor / tooling / OS ---
+.vscode/
+.idea/
+.claude/
+.github/agents/
+Thumbs.db
+.DS_Store
+
+# --- Scratch ---
+_*_dump.txt

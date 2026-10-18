@@ -16,7 +16,7 @@ BCE-with-logits.
 Everything in this module is shared by the three notebooks in this folder:
     01_windowing.ipynb          builds and caches the windowed tensors
     02_sdc_attention_brnn.ipynb trains on SDC-2023, discovers the window
-    03_attention_transfer.ipynb transfers to the Warwick SE-NAV simulation
+    03_attention_transfer.ipynb transfers to the Warwick simulation
 """
 
 from __future__ import annotations
